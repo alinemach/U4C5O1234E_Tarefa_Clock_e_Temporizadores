@@ -166,7 +166,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=U4C5O1234E_Tarefa_Clock_e_Temporizadores1
+CMAKE_PROJECT_NAME:STATIC=U4C5O1234E_Tarefa_Clock_e_Temporizadores
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/home/aline/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-ranlib
@@ -329,6 +329,15 @@ U4C5O1234E_Tarefa_Clock_e_Temporizadores1_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 U4C5O1234E_Tarefa_Clock_e_Temporizadores1_SOURCE_DIR:STATIC=/home/aline/projetos/U4C5O1234E_Tarefa_Clock_e_Temporizadores
+
+//Value Computed by CMake
+U4C5O1234E_Tarefa_Clock_e_Temporizadores_BINARY_DIR:STATIC=/home/aline/projetos/U4C5O1234E_Tarefa_Clock_e_Temporizadores/build
+
+//Value Computed by CMake
+U4C5O1234E_Tarefa_Clock_e_Temporizadores_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+U4C5O1234E_Tarefa_Clock_e_Temporizadores_SOURCE_DIR:STATIC=/home/aline/projetos/U4C5O1234E_Tarefa_Clock_e_Temporizadores
 
 //Value Computed by CMake
 pico_sdk_BINARY_DIR:STATIC=/home/aline/projetos/U4C5O1234E_Tarefa_Clock_e_Temporizadores/build/pico-sdk
