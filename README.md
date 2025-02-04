@@ -9,7 +9,7 @@ Este projeto implementa um semáforo utilizando um Raspberry Pi Pico W com tempo
         pico/stdlib.h
         hardware/timer.h
     Hardware:
-        3 LEDs: Vermelho (GPIO 13), Verde (GPIO 11), Amarelo (GPIO 12)
+        3 LEDs: Vermelho (GPIO 13), Verde (GPIO 11)
         3 Resistores de 330 Ω
         Fios de conexão para os LEDs e resistores
 
@@ -24,13 +24,12 @@ Este projeto implementa um semáforo utilizando um Raspberry Pi Pico W com tempo
     Reinício do ciclo
     ✅ Mudança de estado dos LEDs implementada na função de call-back do temporizador
     ✅ Impressão de informações a cada segundo via comunicação serial
-    ✅ Controle com LEDs RGB (GPIO 11, 12, 13)
+    ✅ Controle com LEDs RGB (GPIO 11, 13)
 
 🚀 Como Executar
 
     Conectar os LEDs e resistores conforme a pinagem especificada:
         LED Vermelho: GPIO 13
-        LED Amarelo: GPIO 12
         LED Verde: GPIO 11
         Resistores: 330Ω em série com cada LED
 
