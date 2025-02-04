@@ -4,7 +4,6 @@
 
 // Definição dos pinos dos LEDs
 #define LED_VERDE    11
-#define LED_AZUL  12
 #define LED_VERMELHO 13
 
 // Variável para armazenar o estado do semáforo
@@ -14,23 +13,22 @@ volatile int estado = 0;
 bool repeating_timer_callback(struct repeating_timer *t) {
     // Desliga todos os LEDs antes de ativar o próximo
     gpio_put(LED_VERMELHO, 0);
-    gpio_put(LED_AZUL, 0);
     gpio_put(LED_VERDE, 0);
 
     // Alterna entre os estados do semáforo
     switch (estado) {
-        case 0:  // Vermelho
+        case 0:  // Vermelho aceso sozinho
             gpio_put(LED_VERMELHO, 1);
             printf("Semáforo: Vermelho\n");
             estado = 1;
             break;
-        case 1:  // AMARELO
+        case 1:  // Amarelo (vermelho + verde acesos juntos)
             gpio_put(LED_VERMELHO, 1);
             gpio_put(LED_VERDE, 1);
-            printf("Semáforo: AMARELO\n");
+            printf("Semáforo: Amarelo\n");
             estado = 2;
             break;
-        case 2:  // Verde
+        case 2:  // Verde aceso sozinho
             gpio_put(LED_VERDE, 1);
             printf("Semáforo: Verde\n");
             estado = 0;
@@ -45,8 +43,6 @@ int main() {
     // Configura os pinos dos LEDs como saída
     gpio_init(LED_VERMELHO);
     gpio_set_dir(LED_VERMELHO, GPIO_OUT);
-    gpio_init(LED_AZUL);
-    gpio_set_dir(LED_AZUL, GPIO_OUT);
     gpio_init(LED_VERDE);
     gpio_set_dir(LED_VERDE, GPIO_OUT);
 
