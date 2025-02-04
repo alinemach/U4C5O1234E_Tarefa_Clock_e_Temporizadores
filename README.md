@@ -47,4 +47,4 @@ Este projeto implementa um semáforo utilizando um Raspberry Pi Pico W com tempo
 
 🎥 Demonstração
 
-🔗 Assista ao vídeo da simulação aqui (Substituir pelo link real)
+🔗  [Assista ao vídeo da simulação aqui](https://github.com/alinemach/U4C5O1234E_Tarefa_Clock_e_Temporizadores/blob/main/src/atividade1_explicada.mp4)
